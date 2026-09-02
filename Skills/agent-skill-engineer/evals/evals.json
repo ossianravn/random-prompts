@@ -1,0 +1,31 @@
+{
+  "skill_name": "agent-skill-engineer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Convert the attached 300-line system prompt for creating Agent Skills into a portable skill optimized for Codex. Do not merely paste the prompt into SKILL.md; use progressive disclosure and deliver a validated bundle.",
+      "expected_output": "A coherent skill folder whose description carries the activation boundary, whose SKILL.md contains the core SOP, whose bulky conditional rules are in focused references, and whose validation report distinguishes executed checks from manual review.",
+      "files": [
+        "evals/files/sample-system-prompt.txt"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Audit the existing skill at ./skills/release-helper. It triggers on ordinary changelog questions and sometimes publishes without a fresh approval. Do not edit files; provide a precise patch and activation evals.",
+      "expected_output": "An audit-only response that inspects the current bundle, identifies routing and authorization defects, preserves working interfaces, proposes a targeted patch, and supplies realistic positive and near-miss negative activation cases without mutating files.",
+      "files": [
+        "evals/files/release-helper/SKILL.md"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Make a reusable skill for our coding standards. These rules should apply to every task in this repository. I explicitly want a skill even if another mechanism is better.",
+      "expected_output": "A skill is produced because the user explicitly requested it, while the summary clearly explains that always-loaded repository guidance is the stronger mechanism and scopes the skill to avoid misleading implicit activation."
+    },
+    {
+      "id": 4,
+      "prompt": "Create a skill from this workflow, but you are offline and cannot verify the target host's current metadata schema or installation path.",
+      "expected_output": "A portable-core bundle based only on stable verified rules, with host-specific fields minimized or omitted, current details labeled unverified, no invented commands or paths, and exact next-best validation steps."
+    }
+  ]
+}

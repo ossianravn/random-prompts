@@ -1,0 +1,102 @@
+[
+  {
+    "query": "Turn this system prompt into an installable Codex skill bundle and choose a better name for it.",
+    "should_trigger": true,
+    "reason": "Direct source-prompt-to-skill creation request."
+  },
+  {
+    "query": "Audit my SKILL.md. It keeps activating for ordinary code review requests, and I need tighter trigger wording.",
+    "should_trigger": true,
+    "reason": "Existing-skill audit focused on activation precision."
+  },
+  {
+    "query": "Migrate this Agent Skill from another host to ChatGPT and Codex, including supported openai.yaml metadata.",
+    "should_trigger": true,
+    "reason": "Host migration and metadata design are in scope."
+  },
+  {
+    "query": "I have an internal runbook for incident handoff. Package the reusable parts as a skill without leaking company-specific secrets.",
+    "should_trigger": true,
+    "reason": "Runbook transformation, scope, and safety are central."
+  },
+  {
+    "query": "Watch the workflow in this trace and extract a repeatable skill, adding scripts only where exact mechanics matter.",
+    "should_trigger": true,
+    "reason": "Demonstration-to-skill extraction is in scope."
+  },
+  {
+    "query": "These three skills overlap and sometimes all load. Decide whether to merge, split, or add a router, then revise them.",
+    "should_trigger": true,
+    "reason": "Skill architecture and collision resolution are in scope."
+  },
+  {
+    "query": "Create realistic positive and near-miss negative trigger evals for this skill description, then tighten it based on the failures.",
+    "should_trigger": true,
+    "reason": "Activation evaluation and description optimization are in scope."
+  },
+  {
+    "query": "Package this existing skill for an OpenAI API upload and verify the archive layout against current docs.",
+    "should_trigger": true,
+    "reason": "Target-specific skill packaging and verification are in scope."
+  },
+  {
+    "query": "I'm not sure whether this belongs in AGENTS.md, a script, MCP, or a skill. Make the call and create the right reusable artifact.",
+    "should_trigger": true,
+    "reason": "Mechanism selection is a required pre-build step."
+  },
+  {
+    "query": "Our skill produces inconsistent reports. Compare it with the old version, revise the SOP, and add a behavioral eval set.",
+    "should_trigger": true,
+    "reason": "Revision plus baseline behavioral evaluation is in scope."
+  },
+  {
+    "query": "Rewrite this system prompt so it sounds clearer and more concise; I only need the revised prompt text.",
+    "should_trigger": false,
+    "reason": "One-off prompt rewriting without a reusable skill artifact is outside scope."
+  },
+  {
+    "query": "Write an AGENTS.md with our repository's TypeScript conventions and commit-message rules.",
+    "should_trigger": false,
+    "reason": "The requested artifact is always-loaded repository guidance, not a skill."
+  },
+  {
+    "query": "Build an MCP server that reads our Salesforce account data.",
+    "should_trigger": false,
+    "reason": "This is live tool integration work, not skill authoring."
+  },
+  {
+    "query": "Create a Python CLI that batch-renames image files and has a dry-run flag.",
+    "should_trigger": false,
+    "reason": "A standalone deterministic CLI is requested, with no skill bundle."
+  },
+  {
+    "query": "Explain what Agent Skills are and how they differ from plugins.",
+    "should_trigger": false,
+    "reason": "General explanation does not require creating, revising, or evaluating a skill."
+  },
+  {
+    "query": "Install the Linear skill from the curated catalog.",
+    "should_trigger": false,
+    "reason": "Skill installation is a separate workflow."
+  },
+  {
+    "query": "Use the PDF skill to extract tables from this report.",
+    "should_trigger": false,
+    "reason": "Executing another skill is outside skill engineering."
+  },
+  {
+    "query": "Create a plugin manifest for my restaurant reservation connector; it has no reusable skill workflow.",
+    "should_trigger": false,
+    "reason": "Plugin packaging without a skill is outside the activation boundary."
+  },
+  {
+    "query": "Summarize this operational runbook for new employees.",
+    "should_trigger": false,
+    "reason": "Summarization alone does not request a reusable Agent Skill."
+  },
+  {
+    "query": "Design a friendly system persona prompt for a customer-support chatbot.",
+    "should_trigger": false,
+    "reason": "Persona prompt design without skill conversion is outside scope."
+  }
+]
